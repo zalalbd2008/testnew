@@ -29,7 +29,7 @@ import secondEight from 'public/images/teams/secondEight.jpg';
 import secondNine from 'public/images/teams/secondNine.jpg';
 import secondTen from 'public/images/teams/secondTen.jpg';
 import secondEleven from 'public/images/teams/secondEleven.jpg';
-import secondTwelve from 'public/images/teams/secondtwelve.jpg';
+// import secondTwelve from 'public/images/teams/secondtwelve.jpg';
 import secondThirteen from 'public/images/teams/secondThirteen.jpg';
 import secondFourteen from 'public/images/teams/secondFourteen.jpg';
 import secondFifteen from 'public/images/teams/secondFifteen.jpg';
@@ -54,7 +54,7 @@ const PortfolioMain = () => {
     secondNine,
     secondTen,
     secondEleven,
-    secondTwelve,
+    // secondTwelve,
     secondThirteen,
     secondFourteen,
     secondFifteen,

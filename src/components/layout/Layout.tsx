@@ -215,6 +215,7 @@ const Layout = ({
     } catch (error) {
       console.log(error);
     }
+    
     router.push('/thank-you');
     return false;
   };

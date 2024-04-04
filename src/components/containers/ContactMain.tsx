@@ -198,7 +198,7 @@ const ContactMain = () => {
               <div className="content">
                 <h4>Phone</h4>
                 <p>
-                  <Link href="tel:+18884423442">+1-888-207-3469</Link>
+                  <Link href="tel:+18884423442">+1-888-442-3442</Link>
                 </p>
                 {/* <p>
                   <Link href="tel:197-90-56-780">Fax : +18882073469</Link>

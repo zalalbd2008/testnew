@@ -19,6 +19,7 @@ const ServiceDetailsMain = ({
   miniPath,
   serviceName,
 }: SERVICEDETAILMAIN) => {
+  
   return (
     <section className="mb-5 service-details fade-wrapper">
       <div className="container">
@@ -26,21 +27,27 @@ const ServiceDetailsMain = ({
           <div className="col-12 col-xl-10">
             <div className="service-details__slider">
               <div className="service-details__slider-single">
-                <div className="poster fade-top">
-                  <Image src={path} alt="Image" />
-                </div>
-
+               
                 {blogData.map(
                   (blog: any, index: React.Key | null | undefined) => {
-                    return !blog.areaHalfWidth && !blog.workStep ? (
-                      <div
-                        className="details-group section__cta text-start"
-                        key={index}
-                      >
-                        <h3 className="title-anim">{blog.title}</h3>
-                        <p dangerouslySetInnerHTML={{ __html: blog.des }} />
-                      </div>
-                    ) : null;
+                    return (
+                      <>
+                        {index === 0 && (
+                          <div className="poster fade-top">
+                            <Image src={path || HeaderImage} alt="Image" />
+                          </div>
+                        )}
+                        {!blog.areaHalfWidth && !blog.workStep ? (
+                          <div
+                            className="details-group section__cta text-start"
+                            key={index}
+                          >
+                            <h3 className="title-anim">{blog.title}</h3>
+                            <p dangerouslySetInnerHTML={{ __html: blog.des }} />
+                          </div>
+                        ) : null}
+                      </>
+                    );
                   }
                 )}
                 <div className="footer__cta text-start pt-4">

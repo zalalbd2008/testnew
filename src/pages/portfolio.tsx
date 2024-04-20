@@ -10,13 +10,14 @@ import { LogoImageChunk } from '@/constant/serviceImagePath';
 
 const OurPortfolio = () => {
   return (
-    <Layout header={2} footer={1} video={0}>
-      <CmnBanner title="Portfolio " navigation="Portfolio " />
+    <Layout header={1} footer={1} video={0}>
+      <CmnBanner title="Portfolio " navigation="Portfolio " /> 
       <PortfolioMain />
-      <PortfolioText show={false} />
-      {/* <TeamMembers /> */}
+     <PortfolioText show={false} />
+      <TeamMembers /> 
       <TeamMembersTwo serviceName={LogoImageChunk} />
-      <CtaTwo />
+       <CtaTwo />
+     
     </Layout>
   );
 };

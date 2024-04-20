@@ -20,14 +20,14 @@ const ServiceDetailsMain = ({
   serviceName,
 }: SERVICEDETAILMAIN) => {
   return (
-    <section className=" mb-5 service-details fade-wrapper">
+    <section className="mb-5 service-details fade-wrapper">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-12 col-xl-10">
             <div className="service-details__slider">
               <div className="service-details__slider-single">
                 <div className="poster fade-top">
-                  <Image src={path || HeaderImage} alt="Image" />
+                  <Image src={path} alt="Image" />
                 </div>
 
                 {blogData.map(

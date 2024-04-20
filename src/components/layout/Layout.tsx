@@ -80,24 +80,21 @@ const Layout = ({
   console.log(!router.pathname.includes('/contact-us') && popupForm);
   const classMappings: Record<string, string> = {
     '/': 'home-light',
-    '/index-two-light': 'home-two-light',
-    '/index-three-light': 'home-three-light',
-    '/index-four-light': 'home-four-light',
-    '/index-five-light': 'home-five-light',
   };
 
   const classNameForCurrentPath = classMappings[router.pathname] || '';
 
-  let additionalClasses = ' ';
+  let additionalClasses = '';
 
   const combinedClasses = `${additionalClasses} my-app`;
 
   const combinedClassName = `${combinedClasses}${
     openNav ? ' body-active' : ''
   } ${classNameForCurrentPath}`;
+  console.log(combinedClassName);
 
   // fade animation
-  useEffect(() => {
+  const fadeAnimation = () => {
     const fadeWrapperRefs = document.querySelectorAll('.fade-wrapper');
 
     fadeWrapperRefs.forEach(fadeWrapperRef => {
@@ -128,6 +125,15 @@ const Layout = ({
         });
       });
     });
+  };
+  useEffect(() => {
+    window.addEventListener('load', () => {
+      fadeAnimation();
+    });
+    return () =>
+      window.removeEventListener('load', () => {
+        fadeAnimation();
+      });
   }, []);
 
   // appear down
@@ -197,8 +203,7 @@ const Layout = ({
   const handelSubmit = async (e: any) => {
     e.preventDefault();
 
-    const EMAIL_PORT_API_URL =
-      'https://anygraphicstoday.com/api/v1' as string;
+    const EMAIL_PORT_API_URL = 'https://anygraphicstoday.com/api/v1' as string;
     try {
       const sendEmail = await fetch(EMAIL_PORT_API_URL, {
         method: 'POST',
@@ -215,7 +220,7 @@ const Layout = ({
     } catch (error) {
       console.log(error);
     }
-    
+
     router.push('/thank-you');
     return false;
   };
@@ -388,12 +393,12 @@ const Layout = ({
           )}
           {children}
         </main>
-      
+
         {footer === 1 && <Footer />}
-        {/* {footer === 2 && <FooterTwo />}
-        {footer === 3 && <FooterThree />}
-        {footer === 4 && <FooterFour />}
-        {footer === 5 && <FooterFive />} */}
+        {footer === 2 && <Footer />}
+        {footer === 3 && <Footer />}
+        {footer === 4 && <Footer />}
+        {footer === 5 && <Footer />}
         {video ? <VideoModal /> : null}
         <ScrollProgressBtn />
         <CustomCursor

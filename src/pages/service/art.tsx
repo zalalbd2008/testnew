@@ -14,7 +14,8 @@ const ServiceDetails = () => {
 
 
   return (
-    <Layout header={2} footer={1} video={false}>
+    <Layout header={1} footer={1} video={0}>
+   
       <ServiceDetailsBanner
         hedaer="Illustration and Art | Any Graphics Today"
         breadcrumb="Illustration and Art"
@@ -23,7 +24,6 @@ const ServiceDetails = () => {
         blogData={serviceArtBlog}
         path={HeaderImage}
         miniPath={MiniHeaderImage}
-        // serviceName={imageChunk}
       />
       <UxProcess stepWorkData={serviceArtBlog} />
       <CtaTwo />

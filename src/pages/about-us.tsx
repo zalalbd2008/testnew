@@ -11,7 +11,7 @@ import PortfolioText from "@/components/containers/home/PortfolioText";
 
 const AboutUs = () => {
   return (
-    <Layout header={2} footer={1} video={0}>
+    <Layout header={1} footer={1} video={0}>
       <CmnBanner title="About Us" navigation="About Us" />
 
       <HomeTwoModal />

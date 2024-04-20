@@ -1,7 +1,7 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
- npm run build && git add . && git commit -m "FIX: some issuse " && git push 
+git add . && git commit -m "FIX: some issuse " && git push 
 ssh root@86.38.204.106
 
 

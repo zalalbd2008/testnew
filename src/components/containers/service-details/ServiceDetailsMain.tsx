@@ -33,8 +33,9 @@ const ServiceDetailsMain = ({
                     return (
                       <>
                         {index === 0 && (
-                          <div className="poster fade-top">
-                            <Image src={path || HeaderImage} alt="Image" />
+                          // poster fade-top 
+                          <div className="poster">
+                            <Image src={path} alt="Image" />
                           </div>
                         )}
                         {!blog.areaHalfWidth && !blog.workStep ? (

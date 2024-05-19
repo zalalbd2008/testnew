@@ -1,16 +1,15 @@
-import React from "react";
-import Layout from "@/components/layout/Layout";
-import HomeOneBanner from "@/components/layout/banner/HomeOneBanner";
-import Agency from "@/components/containers/home/Agency";
-import PortfolioText from "@/components/containers/home/PortfolioText";
-import HomeOffer from "@/components/containers/home/HomeOffer";
-import HomeTestimonial from "@/components/containers/home/HomeTestimonial";
-import HomeBlog from "@/components/containers/home/HomeBlog";
-import HomeSponsor from "@/components/containers/home/HomeSponsor";
-import NextPage from "@/components/containers/home/NextPage";
-import CtaTwo from "@/components/containers/service-details/CtaTwo";
-import Head from "next/head";
-
+import React from 'react';
+import Layout from '@/components/layout/Layout';
+import HomeOneBanner from '@/components/layout/banner/HomeOneBanner';
+import Agency from '@/components/containers/home/Agency';
+import PortfolioText from '@/components/containers/home/PortfolioText';
+import HomeOffer from '@/components/containers/home/HomeOffer';
+import HomeTestimonial from '@/components/containers/home/HomeTestimonial';
+import HomeBlog from '@/components/containers/home/HomeBlog';
+import HomeSponsor from '@/components/containers/home/HomeSponsor';
+import NextPage from '@/components/containers/home/NextPage';
+import CtaTwo from '@/components/containers/service-details/CtaTwo';
+import Head from 'next/head';
 
 const HomeDark = () => {
   return (
@@ -19,6 +18,10 @@ const HomeDark = () => {
         <meta
           name="title"
           content="Top Local Designers for Custom Graphic Branding | Any Graphic Today"
+        />
+        <meta
+          name="google-site-verification"
+          content="EGzXF4NKX_smb9Rs_AjDjfc3oWbHLBXjGeY2aloiQNY"
         />
         <meta
           name="description"

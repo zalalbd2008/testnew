@@ -14,8 +14,8 @@ import Head from 'next/head';
 const HomeDark = () => {
   return (
     <Layout header={1} footer={1} video={true}>
-      <Head>
-        <meta
+      {/* <Head> */}
+        {/* <meta
           name="title"
           content="Top Local Designers for Custom Graphic Branding | Any Graphic Today"
         />
@@ -26,14 +26,15 @@ const HomeDark = () => {
         <meta
           name="description"
           content="Elevate Your Brand with Top Local Graphic Designers at No Upfront Fee. 24/7 Exceptional Design Solutions Near You for Branding"
-        />
-      </Head>
-      <HomeOneBanner />
+        /> */}
+      {/* </Head> */}
+      {/* <HomeOneBanner /> */}
       {/* <Agency />
       <PortfolioText />
       <HomeOffer />
       <HomeBlog />
       <CtaTwo /> */}
+      <h1>just test...working on it  </h1>
     </Layout>
   );
 };

@@ -29,14 +29,11 @@ const HomeDark = () => {
         />
       </Head>
       <HomeOneBanner />
-      <Agency />
+      {/* <Agency />
       <PortfolioText />
       <HomeOffer />
-      {/* <HomeTestimonial /> */}
       <HomeBlog />
-      {/* <HomeSponsor />
-      <NextPage /> */}
-      <CtaTwo />
+      <CtaTwo /> */}
     </Layout>
   );
 };

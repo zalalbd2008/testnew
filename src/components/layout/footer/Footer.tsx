@@ -9,7 +9,6 @@ const Footer = () => {
 
   const handelSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log('ok');
 
     try {
       const sendEmail = await fetch('http://localhost:5000', {

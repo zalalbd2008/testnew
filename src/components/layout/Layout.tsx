@@ -1,20 +1,24 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import Head from 'next/head';
+import dynamic from 'next/dynamic';
+import Image from 'next/image';
+import { useRouter } from 'next/router';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import VanillaTilt from 'vanilla-tilt';
-import { useRouter } from 'next/router';
-import Header from './header/Header';
+import SplitType from 'split-type';
 
-import Footer from './footer/Footer';
+import Header from './header/Header';
 import VideoModal from './VideoModal';
 import ScrollProgressBtn from './ScrollProgressBtn';
 import CustomCursor from './CustomCursor';
-import SplitType from 'split-type';
-import phoneIcon from 'public/phone.gif';
-import Image from 'next/image';
 import calculation from '@/lib/calculation';
-import Link from 'next/link';
+
+const Footer = dynamic(() => import('./footer/Footer'), {
+  ssr: false,
+  loading: () => <div>Loading...</div>,
+});
+
 type LayoutProps = {
   children: React.ReactNode;
   handleMouseEnterTitle?: any;
@@ -257,9 +261,11 @@ const Layout = ({
           <div className="left-icon-tow">
             <a href="tel:+18884423442" target="_blank" className="py-3">
               <Image
-                src={phoneIcon}
+                src="/phone.gif"
                 alt="Phone Icon"
                 className="ps-2"
+                width={200}
+                height={200}
                 style={{
                   objectFit: 'cover',
                   width: '40px',
@@ -394,11 +400,12 @@ const Layout = ({
           {children}
         </main>
 
-        {footer === 1 && <Footer />}
+        {/* {footer === 1 && <Footer />}
         {footer === 2 && <Footer />}
         {footer === 3 && <Footer />}
         {footer === 4 && <Footer />}
-        {footer === 5 && <Footer />}
+        {footer === 5 && <Footer />} */}
+        <Footer />
         {video ? <VideoModal /> : null}
         <ScrollProgressBtn />
         <CustomCursor

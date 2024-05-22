@@ -60,7 +60,10 @@ const HomeDark = () => {
     <>
       <Head>
         <meta name="robots" content="index, follow" />
-          
+        <meta
+          name="google-site-verification"
+          content="EGzXF4NKX_smb9Rs_AjDjfc3oWbHLBXjGeY2aloiQNY"
+        />
       </Head>
       <h1
         style={{

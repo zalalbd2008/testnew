@@ -32,9 +32,9 @@ const ServiceDetailsBanner = ({ hedaer, breadcrumb }: Header) => {
                       Home
                     </Link>
                   </li>
-                  <li className="breadcrumb-item">
+                  {/* <li className="breadcrumb-item">
                     <Link href="our-services">Our Services</Link>
-                  </li>
+                  </li> */}
                   <li className="breadcrumb-item active" aria-current="page">
                     {breadcrumb || hedaer}
                   </li>

@@ -60,6 +60,7 @@ const HomeDark = () => {
     <>
       <Head>
         <meta name="robots" content="index, follow" />
+          
       </Head>
       <h1
         style={{

@@ -44,6 +44,7 @@
 // UI/UX Design
 // import React from 'react';
 import Layout from '@/components/layout/Layout';
+import Head from 'next/head';
 // import ServiceDetailsMain from '@/components/containers/service-details/ServiceDetailsMain';
 // import ServiceDetailsBanner from '@/components/layout/banner/ServiceDetailsBanner';
 // import UxProcess from '@/components/containers/service-details/UxProcess';
@@ -56,16 +57,21 @@ import Layout from '@/components/layout/Layout';
 // import TeamMembers from '@/components/containers/TeamMembers';
 const HomeDark = () => {
   return (
+    <>
+      <Head>
+        <meta name="robots" content="index, follow" />
+      </Head>
+      <h1
+        style={{
+          color: 'red',
+        }}
+      >
+        Just Testing
+      </h1>
+    </>
     // <Layout header={2} footer={1} video={false}>
 
     // </Layout>
-    <h1
-      style={{
-        color: 'red',
-      }}
-    >
-      Just Testing
-    </h1>
   );
 };
 
